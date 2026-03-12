@@ -1,17 +1,17 @@
 output "web_server_ip" {
-  description = "IP du serveur web (statique)"
-  value       = "192.168.1.201"
+  description = "IP du serveur web (dynamique depuis Proxmox)"
+  value       = proxmox_vm_qemu.web_server.default_ipv4_address
 }
 
 output "db_server_ip" {
-  description = "IP du serveur DB (statique)"
-  value       = "192.168.1.202"
+  description = "IP du serveur DB (dynamique depuis Proxmox)"
+  value       = proxmox_vm_qemu.db_server.default_ipv4_address
 }
 
 output "all_vms" {
   description = "Toutes les VMs créées"
   value = {
-    web = "192.168.1.201"
-    db  = "192.168.1.202"
+    web = proxmox_vm_qemu.web_server.default_ipv4_address
+    db  = proxmox_vm_qemu.db_server.default_ipv4_address
   }
 }
