@@ -20,6 +20,14 @@
 
 ---
 
+## 📊 Suivi du Projet
+
+**Board Trello** : [Ansible-Terraform-Proxmox Kanban](https://trello.com/invite/b/69b12a2219b90e76da77556d/ATTI83684c78505e5215721af6587aee29721E01CB93/ansible-terraform-proxmox)
+
+Voir l'état du backlog, des sprints et des tasks en temps réel sur Trello.
+
+---
+
 ## 🎯 Vision Produit
 
 **Nom du produit** : Ansible-Terraform Infrastructure Manager  
